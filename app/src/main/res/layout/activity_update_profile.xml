@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".UpdateProfile">
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/back_arrow_new" />
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/sociative_logo" />
+
+    <TextView
+        android:id="@+id/TextViewAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Logo"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:text="Update Profile"
+        android:textColor="@color/black"
+        android:textSize="29sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewAccount"
+        android:layout_marginBottom="20dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/TextViewAccount"
+                android:layout_gravity="center"
+                android:src="@drawable/user_profile_image"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/SignupTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_image"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Change Your Profile Picture"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/Uname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/SignupTextView"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:drawableStart="@drawable/person"
+                android:drawablePadding="10dp"
+                android:hint="Enter your Username"
+                android:inputType="textEmailAddress"
+                android:maxLength="25"
+                android:maxLines="1"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorDarkGrey"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/LocationEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/Uname"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:drawableStart="@drawable/location_icon"
+                android:drawablePadding="10dp"
+                android:hint="Enter your Location"
+                android:inputType="textEmailAddress"
+                android:maxLength="25"
+                android:maxLines="1"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorDarkGrey"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/PhoneNEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:drawableStart="@drawable/phone"
+                android:drawablePadding="10dp"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:maxLength="25"
+                android:maxLines="1"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorDarkGrey"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/SignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Update Profile"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/UpdateButton"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/forward_button" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/Lottie"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@id/SignIn"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible"
+                    app:lottie_autoPlay="false"
+                    app:lottie_fileName="loading.json"
+                    app:lottie_loop="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

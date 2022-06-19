@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".TermsandConditions">
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/back_arrow_new" />
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/sociative_white" />
+
+    <TextView
+        android:id="@+id/TextViewAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/Logo"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
+        android:text="Terms and Conditions"
+        android:textColor="@color/white"
+        android:textSize="29sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@id/TextViewAccount"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TV1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Welcome to SOCIATIVE"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/TV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:justificationMode="inter_word"
+                android:text="These terms and conditions outline the rules and regulations for the use of SOCIATIVES's Application"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/TV3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:text="Cookies"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/TV4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:justificationMode="inter_word"
+                android:text="We employ the use of cookies. By accessing SOCIATIVE, you agreed to use cookies in agreement with the SOCIATIVE's Privacy Policy."
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/TV5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:text="Disclaimer"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/TV6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:justificationMode="inter_word"
+                android:text="To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our application and the use of this application. Nothing in this disclaimer will:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/TV7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:justificationMode="inter_word"
+                android:text="* limit or exclude our or your liability for death or personal injury;"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/TV8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:justificationMode="inter_word"
+                android:text="* limit or exclude our or your liability for fraud or fraudulent misrepresentation;"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/TV9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:justificationMode="inter_word"
+                android:text="* limit any of our or your liabilities in any way that is not permitted under applicable law;"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/TV10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:justificationMode="inter_word"
+                android:text="* exclude any of our or your liabilities that may not be excluded under applicable law"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/TV11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:justificationMode="inter_word"
+                android:text="As long as the website and the information and services on the application are provided free of charge, we will not be liable for any loss or damage of any nature."
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

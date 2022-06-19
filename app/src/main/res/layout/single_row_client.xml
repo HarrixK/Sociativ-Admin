@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/RelativeLayoutClient"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:civ_border_color="@color/colorDarkGrey"
+        app:civ_border_width="2dp"
+        android:id="@+id/avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/user_profile_image" />
+
+    <TextView
+        android:id="@+id/UserProfile"
+        android:layout_width="wrap_content"
+        android:drawableStart="@drawable/person"
+        android:drawablePadding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/avatar"
+        android:text="Username here."
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/LocationUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/UserProfile"
+        android:layout_toRightOf="@id/avatar"
+        android:drawableStart="@drawable/location_icon"
+        android:drawablePadding="10dp"
+        android:text="Location here."
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/BusinessUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/LocationUser"
+        android:layout_toRightOf="@id/avatar"
+        android:text="Busines Name here."
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:drawableStart="@drawable/business_name"
+        android:drawablePadding="10dp"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="15sp" />
+
+</RelativeLayout>
