@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    tools:context=".ViewSingleAgent">
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/back_arrow_new" />
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/sociative_logo" />
+
+    <TextView
+        android:id="@+id/TextViewAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Logo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Agent Information"
+        android:textColor="@color/black"
+        android:textSize="29sp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatarIV"
+        app:civ_border_color="@color/colorDarkGrey"
+        app:civ_border_width="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/TextViewAccount"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/user_profile_image" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/avatarIV"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/person"
+        android:drawablePadding="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/location_icon"
+        android:drawablePadding="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Location"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/WhatsappCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Comment"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/whatsapp_icon"
+        android:drawablePadding="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Number"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/InstagramCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Comment"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/instagram_icon"
+        android:drawablePadding="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Number"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/FacebookCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Comment"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:drawableStart="@drawable/facebook_icon"
+        android:drawablePadding="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Number"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="15sp" />
+
+</RelativeLayout>
