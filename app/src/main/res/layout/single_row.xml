@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeLayoutMessage"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:civ_border_color="@color/colorDarkGrey"
+        app:civ_border_width="2dp"
+        android:id="@+id/avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/user_profile_image" />
+
+    <TextView
+        android:id="@+id/UserProfile"
+        android:layout_width="wrap_content"
+        android:drawableStart="@drawable/person"
+        android:drawablePadding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@id/avatar"
+        android:text="Username here."
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/LocationUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/UserProfile"
+        android:drawableStart="@drawable/location_icon"
+        android:drawablePadding="10dp"
+        android:layout_toRightOf="@id/avatar"
+        android:text="Location here."
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/WhatsappUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/avatar"
+        android:drawableStart="@drawable/whatsapp_icon"
+        android:drawablePadding="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Number"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/InstagramUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/avatar"
+        android:drawableStart="@drawable/instagram_icon"
+        android:drawablePadding="10dp"
+        android:layout_centerInParent="true"
+        android:text="Number"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/FacebookUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/avatar"
+        android:drawableStart="@drawable/facebook_icon"
+        android:drawablePadding="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:text="Number"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="15sp" />
+
+</RelativeLayout>
